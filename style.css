@@ -1,0 +1,130 @@
+.container {
+  padding: 0 16px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 36px 0 24px;
+}
+
+.header__nav {
+  padding: 25px 0 24px;
+  font-size: 16px;
+}
+
+.asteroids_text {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  margin-right: 24px;
+}
+
+.destruction_text {
+  color: #000;
+}
+/* .asteroids__input {
+	
+} */
+.asteroids__baseInf {
+  display: flex;
+  /* justify-content: space-between; */
+  align-self: flex-end;
+}
+
+.asteroids__distance {
+  margin-left: auto;
+}
+
+.asteroids__block {
+  height: 190px;
+  outline: 2px solid #000;
+  margin-bottom: 16px;
+  border-radius: 25px;
+  justify-content: space-between;
+  padding: 24px 24px 40px 348px;
+}
+
+.asteroid__nameInfo {
+  width: fit-content;
+  border-bottom: 2px solid;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.asteroid__info {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.asteroid__infoHead {
+  display: flex;
+}
+
+ul {
+  padding: 0px;
+}
+.asteroid__assessment {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients {
+  width: 290px;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+.asteroid__infDataDistanceSize {
+  list-style-type: none;
+  align-items: baseline;
+  display: flex;
+  margin-bottom: 0.5em;
+  font-size: 17px;
+  line-height: 20px;
+  align-items: baseline;
+  display: flex;
+}
+.asteroid__infDataDistanceSize::before {
+  content: "";
+  border-bottom: 1px dashed black;
+  flex-grow: 1;
+  order: 1; /* Выводим вторым */
+  margin: 0 5px; /* Расстояние от текста */
+}
+.asteroid__infDataDistanceSize__Dotes {
+  order: 3;
+}
+
+
+.asteroid__assessment{
+	display: flex;
+	font-size: 17px;
+	align-items: center;
+	
+}
+
+
+.asteroid__assessmentGrade{
+	margin-bottom: 4px;
+	
+}
+
+.asteroid__assessmentDanger {
+	margin-bottom: 8px;
+}
+
+.asteroid_assesmentButton{
+	border: 2px solid #186dd6;;
+	background-color:#186dd6;
+	font-size: 16px;
+	color:white;
+	border-radius: 25px;
+	padding: 14px 16px;
+}
