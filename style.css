@@ -26,12 +26,10 @@
 .destruction_text {
   color: #000;
 }
-/* .asteroids__input {
-	
-} */
+
 .asteroids__baseInf {
   display: flex;
-  /* justify-content: space-between; */
+  border-top: 1px solid black;
   align-self: flex-end;
 }
 
@@ -40,12 +38,13 @@
 }
 
 .asteroids__block {
+  background: linear-gradient(90deg, #CFF37D 0%, #7DE88C 100%);
   height: 190px;
-  outline: 2px solid #000;
+  outline: 1px solid #000;
   margin-bottom: 16px;
   border-radius: 25px;
-  justify-content: space-between;
-  padding: 24px 24px 40px 348px;
+  
+
 }
 
 .asteroid__nameInfo {
@@ -58,7 +57,7 @@
 
 .asteroid__info {
   display: flex;
-
+  padding: 24px 24px 0px 348px;
   align-items: center;
   justify-content: space-between;
 }
@@ -82,14 +81,12 @@ ul {
   margin-bottom: 0px;
 }
 .asteroid__infDataDistanceSize {
-  list-style-type: none;
-  align-items: baseline;
   display: flex;
-  margin-bottom: 0.5em;
+  align-items: baseline;
   font-size: 17px;
-  line-height: 20px;
-  align-items: baseline;
-  display: flex;
+  line-height: 13px;
+ 
+
 }
 .asteroid__infDataDistanceSize::before {
   content: "";
@@ -128,3 +125,16 @@ ul {
 	border-radius: 25px;
 	padding: 14px 16px;
 }
+
+ .asteroid__dinoSVG {
+  margin-bottom: 10px;
+  position: absolute;
+  margin-left: 30px;
+  width: 56px;
+  height: 48px;
+} 
+
+.asteroid__meteorSVG{
+}
+
+
