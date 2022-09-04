@@ -135,4 +135,17 @@ ul {
 } 
 
 
+.asteroid__meteorSVG{
+  position: relative;
+  overflow: hidden;
+  left: 130px;
+  bottom: 120px;
+}
 
+.asteroid_assesmentButton:active{
+  border:2px solid black;
+}
+
+.asteroid__nameInfo:hover {
+  border-bottom: 5px solid;
+}
