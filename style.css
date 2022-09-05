@@ -1,6 +1,6 @@
 .container {
   padding: 0 16px;
-  max-width: 920px;
+  max-width: 952px;
   margin: 0 auto;
 }
 
@@ -23,28 +23,66 @@
   margin-right: 24px;
 }
 
+.asteroids__input {
+  width: 18px;
+  height: 18px;
+}
+
+.asteroids__input {
+}
+
 .destruction_text {
   color: #000;
 }
 
 .asteroids__baseInf {
+  padding: 24px 0px 24px 0px;
   display: flex;
   border-top: 1px solid black;
-  align-self: flex-end;
+  justify-content: space-between;
 }
 
-.asteroids__distance {
-  margin-left: auto;
+.asteroid__distance-Moon-KM {
+  cursor: default;
+  cursor: pointer;
+  border-bottom: 1px solid var(--black);
+}
+
+.asteroid__distance-Moon-KM > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .asteroids__block {
-  background: linear-gradient(90deg, #CFF37D 0%, #7DE88C 100%);
   height: 190px;
   outline: 1px solid #000;
   margin-bottom: 16px;
   border-radius: 25px;
-  
+}
+.asteroid__distance-Moon-KM > span:active {
+  font-weight: bold;
+}
 
+.asteroid__distance-Moon-KM > span:visited {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.asteroid__distance-Moon-KM > span {
+  text-decoration: underline;
+}
+.asteroid__distance-Moon-KM > span:hover {
+  text-decoration: none;
+}
+
+.asteroid__block__background {
+  border-radius: 25px;
+  position: relative;
+  width: auto;
+  height: 190px;
+  background: linear-gradient(90deg, #cff37d, #7de88c);
 }
 
 .asteroid__nameInfo {
@@ -57,7 +95,10 @@
 
 .asteroid__info {
   display: flex;
-  padding: 24px 24px 0px 348px;
+  height: 100%;
+  border-radius: 25px;
+  padding-left: 350px;
+  padding-right: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -71,6 +112,8 @@ ul {
 }
 .asteroid__assessment {
   display: flex;
+  font-size: 17px;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -84,68 +127,161 @@ ul {
   display: flex;
   align-items: baseline;
   font-size: 17px;
-  line-height: 13px;
- 
+  line-height: 32px;
+}
 
+.asteroids__distance {
+  display: inline-flex;
+  align-items: center;
 }
-.asteroid__infDataDistanceSize::before {
-  content: "";
-  border-bottom: 1px dashed black;
-  flex-grow: 1;
-  order: 1; /* Выводим вторым */
-  margin: 0 5px; /* Расстояние от текста */
+
+.asteroids__baseInf-input > label {
+  display: inline-flex;
+  align-items: center;
 }
+
 .asteroid__infDataDistanceSize__Dotes {
-  order: 3;
+  flex: 1 1 auto;
+  border-bottom: 1px dotted;
+  margin: 0 2px 4px;
 }
 
-
-.asteroid__assessment{
-	display: flex;
-	font-size: 17px;
-	align-items: center;
-	
-}
-
-
-.asteroid__assessmentGrade{
-	margin-bottom: 4px;
-	
+.asteroid__assessmentGrade {
+  margin-bottom: 4px;
 }
 
 .asteroid__assessmentDanger {
-	margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-.asteroid_assesmentButton{
-	border: 2px solid #186dd6;;
-	background-color:#186dd6;
-	font-size: 16px;
-	color:white;
-	border-radius: 25px;
-	padding: 14px 16px;
+.asteroid_assesmentButton {
+  border: 2px solid #186dd6;
+  background-color: #186dd6;
+  font-size: 16px;
+  color: white;
+  border-radius: 25px;
+  padding: 14px 16px;
 }
 
- .asteroid__dinoSVG {
-  margin-bottom: 10px;
+.asteroid__dinoSVG {
   position: absolute;
-  margin-left: 30px;
   width: 56px;
   height: 48px;
-} 
-
-
-.asteroid__meteorSVG{
-  position: relative;
-  overflow: hidden;
-  left: 130px;
-  bottom: 120px;
+  left: 500px;
+  bottom: 50px;
 }
 
-.asteroid_assesmentButton:active{
-  border:2px solid black;
+.asteroid__dinoSVG > svg {
+}
+
+.asteroid__meteorSVG {
+  position: absolute;
+  width: 71px;
+  height: 72px;
+  left: 100px;
+}
+.asteroid__meteorSVG > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.asteroid_assesmentButton:active {
+  border: 2px solid black;
 }
 
 .asteroid__nameInfo:hover {
-  border-bottom: 5px solid;
+  border-bottom: 0px;
+}
+
+/* Медиазапросы */
+
+@media all and (max-width: 952px) {
+}
+
+@media all and (max-width: 881px) {
+  .header {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .asteroids__baseInf {
+    text-align: right;
+    justify-content: space-between;
+  }
+
+  .asteroid__info {
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+
+  .asteroids__block {
+    height: 400px;
+  }
+
+  .asteroid__name {
+    text-align: left;
+    padding: 0;
+    width: 100%;
+  }
+
+  .asteroid__infDataDistanceSize {
+    font-size: 25px;
+    width: 100%;
+  }
+  .asteroid__nameInfo {
+    font-size: 30px;
+  }
+
+  .asteroids__distance {
+    margin: 0;
+  }
+
+  .asteroid__assessment {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-size: 20px;
+  }
+
+  .asteroid__dinoSVG {
+    position: relative;
+    margin-left: 530px;
+    width: 56px;
+    height: 48px;
+
+    transform: scale(-1, 1);
+  }
+  .asteroid__meteorSVG {
+    left: 30px;
+    bottom: 230px;
+  }
+
+  .asteroid__block__background {
+    height: 150px;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .asteroid__infoHead {
+    width: 100%;
+  }
+
+  .ingredients {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .asteroids__baseInf {
+    font-size: 19px;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .asteroids__distance {
+    display: block;
+    padding-top: 20px;
+    width: 200px;
+  }
 }
